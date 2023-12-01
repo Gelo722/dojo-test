@@ -1,0 +1,480 @@
+
+body {
+    background: #121920;
+    font-family: 'Roboto';
+}
+
+.container {
+    padding: 0;
+}
+
+/* Header */
+
+.header {
+    background-image: url('../images/main_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 2.3rem;
+}
+
+.header li {
+    color: #88939E;
+}
+
+.header svg {
+    margin: 0 0.5rem 0.4rem 0;
+}
+
+.h1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.h2 {
+    color: #FFF;
+    font-size: 2.375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.phone-link {
+    color: #FFF;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.phone-link:hover, .footer .phone-link:hover, .footer svg:hover {
+    color: #F8BE4D;
+}
+
+/* buttons */
+.btn-outline-primary {
+    background-color: transparent;
+    border: 1px solid #F8BE4D;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.25rem 1.44rem;
+    transition: 0.2s;
+}
+
+.btn-outline-primary:hover {
+    background-color: #F8BE4D;
+    color: #000;
+    border: 1px solid black;
+}
+
+.btn-outline-primary:active {
+    background-color: #a47e32 !important;
+    color: #000 !important;
+    border: 1px solid #F8BE4D !important;
+}
+
+.btn-primary {
+    background-color: #F8BE4D;
+    border: 1px solid #F8BE4D;
+    border-radius: 8px;
+    color: #121920;
+    cursor: pointer;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s;
+    position: absolute;
+    width: 17.375rem;
+    height: 3.75rem;
+    left: 0;
+    right: 0;
+    bottom: -1.8rem;
+    margin: auto;
+}
+
+.btn-primary:hover, .pop-btn:hover {
+    background-color: #121920;
+    border: 1px solid #F8BE4D;
+    color: #FFF;
+}
+
+.btn-primary:active, .pop-btn:active {
+    background-color: #c0933b !important;
+    box-shadow: none !important;
+    border: 1px solid #F8BE4D !important;
+}
+
+li {
+    list-style: none;
+    position: relative;
+}
+
+li::before {
+    content: url('../images/list_bullet.svg');
+    position: absolute;
+    left: -30px;
+    top: -5px;
+}
+
+.form {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 2.25rem 2.12rem 4rem 2.12rem;
+    border-radius: 5px;
+    position: relative;
+    max-width: 21rem;
+}
+
+
+.form-control {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1.12rem;
+    padding-left: 1.20rem;
+    font-size: 0.9375rem;
+    background: #3A434C;
+    font-weight: 400;
+    border: 1px solid transparent;
+    color: #88939E;
+
+}
+
+.form-control::placeholder {
+    color: #88939E;
+}
+.form-control:focus {
+    background: #3A434C;
+    color: #88939E;
+    border: 1px solid #F8BE4D;
+    box-shadow: none;
+    
+}
+
+.form-control:visited {
+    color: red;
+}
+.form-heading {
+    color: #FFF;
+    font-size: 1.125rem;
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 1.30rem;
+}
+
+/* Премиальное обслуживание */
+#service-section {
+    margin-top: 5rem;
+}
+
+#service-section .section-title {
+    padding-bottom: 2rem;
+}
+
+.card {
+    width: 15rem;
+    height: 23.75rem;
+    background: transparent;
+    color: wheat;
+    transition: 0.2s;
+    border: 1px solid #1B242D;
+}
+
+.card-text {
+    color: #88939E;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.card-heading {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+    /* margin: 1.5rem; */
+}
+
+svg {
+    color: #F8BE4D;
+    margin: 2.3rem 1.5rem 1.5rem;
+}
+
+
+.card:hover{
+    background-color: #F8BE4D;
+    color: #121920;
+
+}
+
+.card:hover svg,
+.card:hover .card-text,
+.card:hover .card-heading {
+    color: #121920;
+}
+
+/* Привилегии */
+#privilege-section {
+    margin-top: 1rem;
+}
+
+#privilege-section .section-title {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+
+#privilege-section, #how-to {
+    background-image: url(../images/secondary_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.privilege-heading {
+    color: #F8BE4D;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.875rem;
+    margin-bottom: 4rem;
+}
+
+.privilege-text {
+    color: #88939E;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.125rem;
+}
+
+.bold {
+    color: #FFF;
+    font-weight: 700;
+}
+
+.reservation-form {
+    position: relative;
+}
+.reservation-form .form-control {
+    margin: 0 !important;
+    width: 17rem;
+    height: 3rem;
+    background-color: transparent;
+    border-bottom: 1px solid #3A434C;
+    border-radius: 0;
+    padding-left: 2rem;
+    transition: 0.5s;
+}
+
+
+#reservation-profile::after {
+    content: url(../images/profile_icon.svg);
+    top: 0.9rem;
+    position: absolute;
+}
+
+#reservation-number::after {
+    content: url(../images/telephone_icon.svg);
+    top: 0.9rem;
+    position: absolute;
+}
+
+.reservation-form .form-control:focus {
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 1px solid #F8BE4D;
+}
+
+.reservation-form .btn-outline-primary {
+    width: 17rem;
+    height: 3rem;
+    padding: 0;
+}
+
+
+.input-icon {
+    position: absolute;
+    top: 0.9rem;
+
+}
+
+/* Индивидуальная поддержка */
+#support-section {
+    margin-top: 8rem;
+}
+
+#support-section .section-title {
+    padding-bottom: 2.25rem;
+}
+
+.card-support{
+    width: 15rem;
+    height: 25rem;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #000;
+    /* margin-bottom: 2rem; */
+    margin: 0 auto 2rem;
+}
+
+.support-img{
+    width: 11rem;
+    height: 13rem;
+}
+
+#worker-1 {
+    background: url(../images/worker_1.png);
+}
+
+#worker-2 {
+    background: url(../images/worker_2.png);
+}
+
+#worker-3 {
+    background: url(../images/worker_3.png);
+
+}
+#worker-4 {
+    background: url(../images/worker_4.png);
+}
+#worker-5 {
+    background: url(../images/worker_5.png);
+}
+#worker-6 {
+    background: url(../images/worker_6.png);
+}
+#worker-7 {
+    background: url(../images/worker_7.png);
+}
+#worker-8 {
+    background: url(../images/worker_8.png);
+}
+
+#worker-1, #worker-2, #worker-3,
+#worker-4, #worker-5, #worker-6,
+#worker-7, #worker-8 {
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+.support-text {
+    color: #121920;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem; /* 153.846% */
+}
+
+/* Как стать премиальным клиентом */
+#how-to {
+    margin-top: 2rem;
+}
+
+#how-to .section-title {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.text-premium {
+    color: #232A32;
+    font-size: 6.25rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.premium-decoration {
+    display: inline-block;
+    content: " ";
+    width: 2.25rem;
+    height: 0.125rem;
+    background-color: #F8BE4D;
+}
+
+.get-text {
+    color: #88939E;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem;
+    padding-left: 10px
+}
+
+
+.get-text::before {
+    border-left: 2px solid #F8BE4D;
+    content: " ";
+    display: inline-block;
+    height: 45px;
+    width: 2px;
+    margin-top: 1rem;
+    background-color: #F8BE4D;
+    position: relative;
+    top: 1.99rem;
+    left: -1.5rem;
+
+} 
+.get-secondary {
+    color: #88939E;
+    margin-top: 3rem;
+}
+
+.get-secondary p {
+    margin-bottom: 0;
+}
+
+/* Футер */
+.footer {
+    background-color: #0D141B;
+    padding-top: 2.19rem;
+    padding-bottom: 2.12rem;
+    margin-top: 6rem;
+}
+
+.footer svg {
+    margin: 0 0.5rem 0.4rem 0;
+}
+
+.footer .phone-link {
+    color: #61666B ;
+}
+
+
+/* Pop-up */
+.pop-btn {
+    background-color: #F8BE4D;
+    border: 1px solid #F8BE4D;
+    border-radius: 8px;
+    color: #121920;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    transition: 0.2s;
+    width: 7rem;
+    height: 3rem;
+}
+
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1050px;
+    }
+}
